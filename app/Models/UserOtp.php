@@ -16,6 +16,7 @@ class UserOtp extends Model
         'expire_at'
     ];
 
+    //method to send sms on phone number
     public function sendSMS($reciverNumber){
         $message = 'Login OTP is'.$this->otp;
 
